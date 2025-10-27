@@ -87,6 +87,7 @@ ol {
 }
 
 .content__list-container{
+  position: relative;
   height: 298px;
   overflow-y: scroll;
   margin-top: 22px;
@@ -95,6 +96,11 @@ ol {
   padding-top: 2px;
   padding-right: 3px;
 }
+
+.content__list-container:has(.preloader){
+  overflow-y: hidden;
+}
+
 .result__video-container{
   position: relative;
   width: 711px;
